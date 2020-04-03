@@ -1,2 +1,2 @@
 # Test
-Just for
+Just for a test.
