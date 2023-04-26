@@ -49,7 +49,7 @@ function scrollToTop() {
     var currentScroll = window.pageYOffset;
     if (currentScroll > 0) {
         window.scrollTo(0, Math.floor(currentScroll - currentScroll / 8));
-        setTimeout(scrollToTop, 10);
+        setTimeout(scrollToTop, 0);
     }
 }
 
