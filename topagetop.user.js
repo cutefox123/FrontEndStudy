@@ -45,13 +45,13 @@
     });
 
     // 返回顶部函数
-    function scrollToTop() {
-        var currentScroll = window.pageYOffset;
-        if (currentScroll > 0) {
-            window.scrollTo(0, currentScroll - 150);
-            setTimeout(scrollToTop, 10);
-        }
+function scrollToTop() {
+    var currentScroll = window.pageYOffset;
+    if (currentScroll > 0) {
+        window.scrollTo(0, Math.floor(currentScroll - currentScroll / 8));
+        setTimeout(scrollToTop, 10);
     }
+}
 
     // 添加点击事件监听器
     backToTopButton.addEventListener('click', function() {
